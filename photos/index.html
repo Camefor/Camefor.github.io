@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -132,7 +132,7 @@
 <meta property="og:site_name" content="栩宇">
 <meta property="og:description" content="/* 去除顶部距离 */     .main-inner{         margin-top: unset;     }      .box{         visibility: visible;         overflow: auto;      }      .box li{         float: left;         width: 25%;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-03T05:54:59.307Z">
+<meta property="og:updated_time" content="2019-05-03T11:18:51.183Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="栩宇">
 <meta name="twitter:description" content="/* 去除顶部距离 */     .main-inner{         margin-top: unset;     }      .box{         visibility: visible;         overflow: auto;      }      .box li{         float: left;         width: 25%;">
@@ -143,7 +143,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Mist',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -488,13 +488,13 @@ function loadXMLDoc(xmlUrl)
 }
 
 //存储桶的访问域名（基础配置-访问域名）
-var xmllink="https://photo-1255730619.cos.ap-chengdu.myqcloud.com/"
+var xmllink="https://photo-1255730619.cos.ap-chengdu.myqcloud.com"
 
 xmlDoc=loadXMLDoc(xmllink);
 var urls=xmlDoc.getElementsByTagName('Key');
 var date=xmlDoc.getElementsByTagName('LastModified');
 var wid=250;
-var showNum=10; //每个相册一次展示多少照片
+var showNum=12; //每个相册一次展示多少照片
 if ((window.innerWidth)>1200) {wid=(window.innerWidth*3)/18;}
 var box=document.getElementById('box');
 var i=0;
@@ -774,7 +774,7 @@ function moreClick(obj,cur,cont,title){
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -908,13 +908,6 @@ setInterval("createtime()",250);
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
