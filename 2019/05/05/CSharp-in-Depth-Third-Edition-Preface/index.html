@@ -397,16 +397,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/05/05/CSharp-in-Depth-Third-Edition-Preface/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/05/CSharp-in-Depth-Third-Edition-Preface/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -552,6 +542,7 @@
   
     <div class="comments" id="comments">
     </div>
+
   
 
 
@@ -912,8 +903,10 @@ setInterval("createtime()",250);
 
 
 
+
+  
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  <script src="/js/src/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
@@ -922,19 +915,13 @@ setInterval("createtime()",250);
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
+        av: AV, 
         el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'cTskDDyQ8LndtNP9fcvuT9fu-gzGzoHsz',
-        appKey: 'PiM6fD5OMWeSl9F7J1JyqDg2',
+        appId: 'cTskDDyQ8LndtNP9fcvuT9fu-gzGzoHsz,',
+        appKey: 'PiM6fD5OMWeSl9F7J1JyqDg2,',
         placeholder: '写下你的评论...',
-        avatar:'monsterid',
-        guest_info:guest,
-        pageSize:'10' || 10,
     });
   </script>
-
-
 
   
 
