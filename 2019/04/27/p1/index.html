@@ -133,7 +133,7 @@
 <meta property="og:site_name" content="栩宇">
 <meta property="og:description" content="无论什么样的人，只要还活着， 就应该得到充分的尊重并尊重他人。 有生命的东西全都是这世上不可或缺的重要齿轮">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-01T04:39:29.606Z">
+<meta property="og:updated_time" content="2019-05-05T07:05:53.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一些句子">
 <meta name="twitter:description" content="无论什么样的人，只要还活着， 就应该得到充分的尊重并尊重他人。 有生命的东西全都是这世上不可或缺的重要齿轮">
@@ -146,7 +146,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -395,6 +395,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/27/p1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/27/p1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -456,8 +466,7 @@
       
 
       
-        <p>&nbsp; &nbsp; </p><h3>《人间失格》太宰治</h3><p></p>
-<p>&nbsp; &nbsp; 瓦雷里:“在行善时要始终怀有歉意，因为没有比善意更容易伤人的东西。”</p>
+        <p>&nbsp; &nbsp; </p><h5>瓦雷里:“在行善时要始终怀有歉意，因为没有比善意更容易伤人的东西。”</h5><p></p>
 <p>&nbsp; &nbsp; “你哥哥的眼睛是看见过漂亮千百倍的景色，不过这眼睛相反也会脏千百倍吧。”<br><br></p>
 <p>&nbsp; &nbsp; “天使在天空中飞舞，听从神的旨意收起翅膀，像降落伞似的飘落到世界的各个角落。我飘落在北国的雪原上，你飘落在南国的柑橘田里，这些少年则飘落在上野公园里。仅仅就是这些差别。以后即便会茁壮地成长，少年们啊，一定不要在乎容貌，不要抽烟，除了节日之外不要喝酒，而且要欣赏性格内向略施粉黛的姑娘。” <br></p>
 <p>&nbsp; &nbsp; “我是准备孤身一人独自战斗到今天的， 但不知为何，总觉得像是要败下阵来，心中惶惠不已。然而，事到如今，我不会去向那些直至今日还轻蔑我的人认错，请求他们无论如何和我交个朋友。我只能依然孤独地喝着劣质酒，将我的战斗继续下去。<br><br>&nbsp; &nbsp; 我的战斗，一言以蔽之， 就是与蹈常袭故的现象做斗争，是与人们习以为常的拿腔作势做斗争，是与显而易见的溜须拍马做斗争，是针对贫气现象、悭吝者的战斗。<br></p>
@@ -553,6 +562,9 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+  
 
 
 
@@ -643,6 +655,12 @@
                         <i class="fa fa-fw fa-facebook"></i>FB Page</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://www.weibo.com/p/1005053977742207?is_all=1" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-globe"></i>微博</a>
+                  </span>
+                
             </div>
           
 
@@ -709,7 +727,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">《人间失格》太宰治</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">瓦雷里:“在行善时要始终怀有歉意，因为没有比善意更容易伤人的东西。”</span></a></li></ol></div>
             
 
           </div>
@@ -930,6 +948,28 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'cTskDDyQ8LndtNP9fcvuT9fu-gzGzoHsz',
+        appKey: 'PiM6fD5OMWeSl9F7J1JyqDg2',
+        placeholder: '写下你的评论...',
+        avatar:'xuehaq@gmail.com',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
