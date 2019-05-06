@@ -733,10 +733,8 @@ setInterval("createtime()",250);
 
 
 
-
-  
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="/js/src/Valine.min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
@@ -745,13 +743,19 @@ setInterval("createtime()",250);
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
-        av: AV, 
         el: '#comments' ,
-        appId: 'cTskDDyQ8LndtNP9fcvuT9fu-gzGzoHsz,',
-        appKey: 'PiM6fD5OMWeSl9F7J1JyqDg2,',
+        verify: false,
+        notify: false,
+        appId: 'cTskDDyQ8LndtNP9fcvuT9fu-gzGzoHsz',
+        appKey: 'PiM6fD5OMWeSl9F7J1JyqDg2',
         placeholder: '写下你的评论...',
+        avatar:'wavatar',
+        guest_info:guest,
+        pageSize:'10' || 10,
     });
   </script>
+
+
 
   
 
